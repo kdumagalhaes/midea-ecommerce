@@ -1,0 +1,194 @@
+.top-menu-info {
+  background-color: #6D6D6D;
+  width: 100%;
+  height: 55px;
+  color: #fff;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+.top-menu-info div {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-menu-info div a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.top-menu-info div span {
+  display: block;
+}
+.top-menu-info div span:first-of-type {
+  padding: 10px 60px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+header {
+  width: 100%;
+}
+.logo,
+.top-cart__search-bar {
+  margin-right: 100px;
+}
+.logo a img {
+  width: 165px;
+}
+.top-cart {
+  width: 100%;
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+}
+.top-cart__content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.top-cart__search-bar {
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  padding: 0 40px 0 20px;
+  background-image: url('../assets//icons/search.svg');
+  background-repeat: no-repeat;
+  background-position-x: 450px;
+  background-position-y: center;
+  background-size: 30px;
+}
+.top-cart__search-bar::placeholder {
+  opacity: 0.5;
+  font-weight: bold;
+}
+.c-btn {
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+  transition: 0.4s;
+  width: 100%;
+}
+.top-cart__btn {
+  max-width: 190px;
+  min-height: 25px;
+  background-color: #029BDC;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 15px;
+}
+.top-cart__btn:hover {
+  background-color: #9ea4aa;
+}
+.c-create-account {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.c-create-account .c-create-account__user-link {
+  margin-right: 5px;
+}
+.c-create-account .c-create-account__user-link i {
+  transition: 0.4s;
+  color: #9ea4aa;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+.c-create-account .c-create-account__user-link i:hover {
+  color: #029BDC;
+}
+.c-create-account:hover .c-tooltip-create-account {
+  transform: scale(1);
+}
+.c-create-account__login-link {
+  color: #6D6D6D;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.4s;
+}
+.c-create-account__login-link:hover {
+  color: #029BDC;
+}
+.c-tooltip-create-account {
+  width: 200px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #9ea4aa;
+  position: absolute;
+  top: 85px;
+  left: -80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.2s ease-in-out;
+}
+.c-tooltip-create-account::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  border: 10px solid transparent;
+  border-bottom-color: #9ea4aa;
+  background: transparent;
+  z-index: 1;
+}
+.c-tooltip-create-account a {
+  color: #6D6D6D;
+  font-weight: bold;
+  text-decoration: none;
+}
+.c-tooltip-create-account a:hover {
+  text-decoration: underline;
+}
+.c-cart {
+  margin-left: 20px;
+  font-size: 1.7rem;
+  color: #9ea4aa;
+  position: relative;
+}
+.c-cart .c-cart__cart-link {
+  color: #6D6D6D;
+  transition: 0.3s;
+}
+.c-cart .c-cart__cart-link:hover {
+  color: #029BDC;
+}
+.c-cart .c-cart__bag {
+  display: block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #6D6D6D;
+  position: absolute;
+  top: -8px;
+  left: 20px;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: #029BDC;
+}
+.main-menu__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+.main-menu__item a {
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+.item1__content {
+  max-width: 100%;
+  height: 300px;
+  background: rgba(153, 41, 41, 0.7);
+  margin-top: 25px;
+}
