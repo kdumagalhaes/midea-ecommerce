@@ -347,3 +347,14 @@ nav {
   font-size: 0.9rem;
   color: #6D6D6D;
 }
+.kitchen-portfolio {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #6D6D6D;
+}
+.kitchen-portfolio__text {
+  padding: 10px 0 10px 50px;
+  color: #fff;
+  text-transform: uppercase;
+}
