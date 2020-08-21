@@ -210,7 +210,6 @@ header {
 nav {
     width: 100%;
     background-color: @blue;
-    height: 50px;
 }
 
 .main-navigation {
@@ -228,8 +227,6 @@ nav {
 
 .main-navigation__item {
     padding: 16px 0;
-    position: relative;
-    z-index: 0;
 
     a {
         text-decoration: none;
@@ -240,21 +237,27 @@ nav {
 }
 
 .slider-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
 
 }
 
 .c-top-slider {
+    position: relative;
+    z-index: 1;
 }
 
 .c-top-slider__img {
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0;
     transition: opacity 0.3s;
 
     img {
         width: 100%;
-        position: absolute;
-        
+
     }
 }
 
@@ -286,9 +289,47 @@ nav {
 }
 
 .promo-cta {
-    position: relative;
+    height: 110px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    height: 100px;
-    background-color: #fff;
+    align-items: center;
+}
+
+.promo-cta__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promo-cta__text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: @gray;
+    margin-right: 40px;
+}
+
+.promo-cta__input {
+    border: 1px solid @lightGray;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.promo-cta__input::placeholder {
+    font-size: 0.9rem;
+}
+
+.promo-cta__btn {
+    max-width: 130px;
+    font-weight: bold;
+    background-color: @gray;
+    color: #fff;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: #fff;
+        border: 1px solid @lightGray;
+        color: @lightGray;
+    }
 }
