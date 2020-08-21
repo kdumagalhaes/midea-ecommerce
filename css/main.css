@@ -41,9 +41,10 @@ header {
 }
 .top-cart {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   height: 100px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 .top-cart__content {
   display: flex;
@@ -197,7 +198,7 @@ nav {
 .slider-container {
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 19vw;
 }
 .c-top-slider {
   position: relative;
@@ -246,8 +247,9 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 .promo-cta__text {
   font-size: 1rem;
@@ -274,4 +276,54 @@ nav {
   background-color: #fff;
   border: 1px solid #9ea4aa;
   color: #9ea4aa;
+}
+.lider-cta {
+  width: 100%;
+  height: 100%;
+  background-color: #9ea4aa;
+}
+.lider-cta__content {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto 30px auto;
+}
+.lider-cta__text {
+  font-size: 2.3rem;
+  font-weight: normal;
+  color: #fff;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.lider-cta__ares-condicionados {
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+}
+.lider-cta__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 230px;
+  padding-bottom: 40px;
+}
+.lider-cta__product img {
+  border-radius: 50%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.lider-cta__btn {
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  max-width: 107px;
+  height: 35px;
+  background-color: #6D6D6D;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.lider-cta__btn:hover {
+  background-color: #029BDC;
+  color: #fff;
 }
