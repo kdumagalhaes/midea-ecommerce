@@ -512,7 +512,7 @@ nav {
 .categories-area {
   width: 100%;
   padding: 0 40px;
-  margin-top: 35px;
+  margin: 35px 0;
 }
 .categories-area .categories-area__content {
   margin: 0 auto;
@@ -553,4 +553,115 @@ nav {
 .categories-area .categories-area__category ul li a {
   color: #fff;
   text-decoration: none;
+}
+.bottom {
+  width: 100%;
+  background-color: #6D6D6D;
+  padding-top: 50px;
+}
+.bottom__content {
+  max-width: 1280px;
+  padding: 0 40px 40px 40px;
+  margin: 0 auto;
+}
+.bottom__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom__logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+.bottom__col {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.bottom__col h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.bottom--col1 span,
+.bottom--col1 p,
+.bottom--col1 a {
+  margin-left: 10px;
+  color: #fff;
+}
+.bottom--col1 span {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.bottom--col1 p {
+  margin-bottom: 10px;
+}
+.bottom--col1 a {
+  font-weight: bold;
+  text-decoration: none;
+}
+.bottom--col-list li {
+  margin-bottom: 15px;
+}
+.bottom--col-list li a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.bottom--col-list li a:hover {
+  text-decoration: underline;
+}
+.bottom__col--social-media ul li,
+.bottom__col--security ul li {
+  display: inline;
+  margin-right: 4px;
+}
+.bottom__col--social-media ul li:last-child,
+.bottom__col--security ul li:last-child {
+  margin-right: 0;
+}
+.bottom__col--social-media {
+  margin-bottom: 10px;
+}
+.bottom__col--social-media .social-media-img {
+  width: 50px;
+}
+.bottom__col--security {
+  max-width: 290px;
+}
+.bottom__col--security .ssl-badge {
+  width: 70px;
+}
+.bottom__col--security .opinions-badge {
+  margin: 10px 0 0 60px;
+}
+.bottom__alert {
+  color: #fff;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.bottom__alert p {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.bottom__alert p:last-child {
+  margin-bottom: 0;
+}
+.bottom-info {
+  width: 100%;
+  background-color: #EAEAEA;
+}
+.bottom-info__content {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-info__content address {
+  font-size: 0.6rem;
+  font-style: normal;
 }

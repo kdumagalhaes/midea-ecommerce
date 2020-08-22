@@ -622,7 +622,7 @@ nav {
 .categories-area {
     width: 100%;
     padding: @safeAreaPadding;
-    margin-top: 35px;
+    margin: 35px 0;
 
     .categories-area__content {
         margin: 0 auto;
@@ -661,14 +661,161 @@ nav {
 
         ul {
             font-size: 0.95rem;
-            
+
             li {
                 margin-bottom: 5px;
+
                 a {
                     color: #fff;
                     text-decoration: none;
                 }
             }
         }
+    }
+}
+
+.bottom {
+    width: 100%;
+    background-color: @gray;
+    padding-top: 50px;
+}
+
+.bottom__content {
+    max-width: 1280px;
+    padding: 0 40px 40px 40px;
+    margin: 0 auto;
+}
+
+.bottom__navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom__logo {
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+.bottom__col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    h3 {
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+}
+
+.bottom--col1 {
+
+    span,
+    p,
+    a {
+        margin-left: 10px;
+        color: #fff;
+    }
+
+    span {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+}
+
+.bottom--col-list {
+    li {
+        margin-bottom: 15px;
+        a {
+            color: #fff;
+            font-size: 0.9rem;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.bottom__col--social-media,
+.bottom__col--security {
+    ul {
+        li {
+            display: inline;
+            margin-right: 4px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+}
+
+.bottom__col--social-media {
+    margin-bottom: 10px;
+
+    .social-media-img {
+        width: 50px;
+    }
+}
+
+.bottom__col--security {
+    max-width: 290px;
+
+    .ssl-badge {
+        width: 70px;
+    }
+
+    .opinions-badge {
+        margin: 10px 0 0 60px;
+    }
+}
+
+.bottom__alert {
+    color: #fff;
+    max-width: 720px;
+    margin: 0 auto;
+
+    p {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 0.9rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.bottom-info {
+    width: 100%;
+    background-color: @lighterGray;
+}
+
+.bottom-info__content {
+    max-width: 1280px;
+    padding: @safeAreaPadding;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    address {
+        font-size: 0.6rem;
+        font-style: normal;
     }
 }
