@@ -299,6 +299,7 @@ nav {
 .promo-cta__content {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -521,7 +522,7 @@ nav {
 .banners {
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     padding: @safeAreaPadding;
 
     div {
@@ -548,5 +549,66 @@ nav {
         img {
             margin-top: 30px;
         }
+    }
+}
+
+.blog-area {
+    width: 100%;
+    padding: @safeAreaPadding;
+
+    .blog-area__header {
+        background-color: @darkGray;
+        max-width: 1200px;
+        margin: 0 auto 40px auto;
+
+        h3 {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.3rem;
+            padding: 10px;
+        }
+    }
+
+    .blog-area__posts {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .blog-area__post {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-area__post-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.9rem;
+        line-height: 22px;
+        height: 280px;
+
+        img {
+            max-width: 100%;
+            max-height: 150px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .blog-area__btn {
+        margin-top: auto;
+        max-width: 150px;
+        background-color: @darkGray;
+        color: #fff;
+        font-weight: bold;
+        font-size: 0.9rem;
     }
 }
