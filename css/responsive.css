@@ -29,8 +29,20 @@
   .conditions-row__item span {
     font-size: 0.6rem;
   }
+  .c-product .c-product__badge {
+    width: 40px;
+    height: 40px;
+    font-size: 0.7rem;
+    top: 28%;
+  }
   .categories-area {
     padding: 0;
+  }
+  .categories-area .categories-area__category img {
+    width: 50px;
+  }
+  .categories-area .categories-area__category ul {
+    font-size: 0.8rem;
   }
   .bottom__navigation {
     flex-direction: column;
