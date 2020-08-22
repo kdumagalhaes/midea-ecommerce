@@ -41,6 +41,10 @@ header {
     width: 100%;
 }
 
+.fa-bars {
+    display: none;
+}
+
 .logo,
 .top-cart__search-bar {
     margin-right: 100px;
@@ -85,6 +89,10 @@ header {
         opacity: 0.5;
         font-weight: bold;
     }
+}
+
+.top-cart__search-bar--responsive {
+    display: none;
 }
 
 .c-btn {
@@ -361,6 +369,7 @@ nav {
     max-width: 1280px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .lider-cta__product {
@@ -554,8 +563,7 @@ nav {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto 40px auto;
-    padding: @safeAreaPadding;
-
+    padding: 0 20px 0 20px;
     div {
         display: flex;
         width: 100%;
