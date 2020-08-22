@@ -8,6 +8,8 @@ const previous = document.querySelector('.previous');
 const next = document.querySelector('.next');
 
 function startJs() {
+
+  //slide imgs autoplay && clicking on 'next' arrow
   const slideImages = () => {
     images[currentImageIndex].classList.remove('selected-img');
   
@@ -20,6 +22,7 @@ function startJs() {
     images[currentImageIndex].classList.add('selected-img');
   };
   
+  //slide imgs clicking on 'previous' arrow
   const previousSlide = () => {
     images[currentImageIndex].classList.remove('selected-img');
   
@@ -32,6 +35,7 @@ function startJs() {
     images[currentImageIndex].classList.add('selected-img');
   };
   
+  //slide imgs function
   const startSlider = () => {
     setInterval(slideImages, time);
   };

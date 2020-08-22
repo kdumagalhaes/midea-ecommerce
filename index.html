@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="O Maior Fabricante de Eletrodomésticos e Ar Condicionado - Midea Store">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">    
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>
       O Maior Fabricante de Eletrodomésticos e Ar Condicionado - Midea Store
     </title>
@@ -26,7 +27,6 @@
     </div>
 
     <header>
-
       <div class="top-cart">
         <div class="top-cart__content">
         <h1 class="logo">
@@ -36,8 +36,9 @@
               alt="O Maior Fabricante de Eletrodomésticos e Ar Condicionado - Midea Store"
           /></a>
         </h1>
-
+        <label for="pesquisa">barra de pesquisa</label>
         <input
+          id="pesquisa"
           class="top-cart__search-bar"
           type="search"
           placeholder="Buscar"
@@ -74,12 +75,12 @@
 
 <div class="slider-container">
     <div class="c-top-slider">
-      <a href="#" class="selected-img c-top-slider__img"><img  src="./assets/img_slider/banner_midea_lavadora_1920x395_v2.png" alt=""></a>
-      <a href="#" class="c-top-slider__img"><img src="./assets/img_slider/banner_midea_secadora_1920x395_v2.png" alt=""></a>
-      <a href="#" class="c-top-slider__img"><img src="./assets/img_slider/banner_mideastore_cooktops_1920x395_a_v2.jpg" alt=""></a>
-      <a href="#" class="c-top-slider__img"><img src="./assets/img_slider/banner_mideastore_cooktops_1920x395_a_v2.png" alt=""></a>
-      <a href="#" class="c-top-slider__img"><img src="./assets/img_slider/banner_mideastore_corinthians_1920x395_a_v1.png" alt=""></a>
-      <a href="#" class="c-top-slider__img"><img src="./assets/img_slider/climatizador_1920x395.png" alt=""></a>
+      <a href="#" class="selected-img c-top-slider__img"><img  src="./assets/img_slider/banner_midea_lavadora_1920x395_v2.png" alt="lavadora de roupas"></a>
+      <a href="#" class="c-top-slider__img"><img src="./assets/img_slider/banner_midea_secadora_1920x395_v2.png" alt="secadora de roupas"></a>
+      <a href="#" class="c-top-slider__img"><img src="./assets/img_slider/banner_mideastore_cooktops_1920x395_a_v2.jpg" alt="linha de ares condicionados"></a>
+      <a href="#" class="c-top-slider__img"><img src="./assets/img_slider/banner_mideastore_cooktops_1920x395_a_v2.png" alt="linha de cooktops de indução"></a>
+      <a href="#" class="c-top-slider__img"><img src="./assets/img_slider/banner_mideastore_corinthians_1920x395_a_v1.png" alt="midea store patrocina corinthians"></a>
+      <a href="#" class="c-top-slider__img"><img src="./assets/img_slider/climatizador_1920x395.png" alt="climatizador"></a>
       <div class="previous"> < </div>
       <div class="next"> > </div>
     </div>
@@ -88,34 +89,36 @@
     <div class="promo-cta">
       <div class="promo-cta__content">
         <span class="promo-cta__text">Cadastre-se e fique por dentro das ofertas, lançamentos, promoções.</span>
-        <input class="promo-cta__input" type="text" placeholder="Nome">
-        <input class="promo-cta__input" type="email" placeholder="Email">
+        <label for="nome">insira seu nome</label>
+        <input id="nome" class="promo-cta__input" type="text" placeholder="Nome">
+        <label for="email">insira seu email</label>
+        <input id="email" class="promo-cta__input" type="email" placeholder="Email">
         <button class="c-btn promo-cta__btn">Cadastre-se</button>
       </div>
     </div>
 
     <div class="lider-cta">
       <div class="lider-cta__content">
-        <h2 class="lider-cta__text">Confira a loja <strong>líder</strong> em <strong>Ar condicionado.</strong></h2>
+        <h2 class="lider-cta__title">Confira a loja <strong>líder</strong> em <strong>Ar condicionado.</strong></h2>
         <div class="lider-cta__ares-condicionados">
           <div class="lider-cta__product">
-            <img src="./assets/ar_condicionado/inverter.jpg" alt="">
+            <img src="./assets/ar_condicionado/inverter.jpg" alt="inverter">
             <button class="lider-cta__btn">Inverter</button>
           </div>
           <div class="lider-cta__product">
-            <img src="./assets/ar_condicionado/split.jpg" alt="">
+            <img src="./assets/ar_condicionado/split.jpg" alt="splut">
             <button class="lider-cta__btn">Split</button>
           </div>
           <div class="lider-cta__product">
-            <img src="./assets/ar_condicionado/janela.jpg" alt="">
+            <img src="./assets/ar_condicionado/janela.jpg" alt="janela">
             <button class="lider-cta__btn">Janela</button>
           </div>
           <div class="lider-cta__product">
-            <img src="./assets/ar_condicionado/multisplit.jpg" alt="">
+            <img src="./assets/ar_condicionado/multisplit.jpg" alt="multisplit">
             <button class="lider-cta__btn">Multisplit</button>
           </div>
           <div class="lider-cta__product">
-            <img src="./assets/ar_condicionado/cassette.jpg" alt="">
+            <img src="./assets/ar_condicionado/cassette.jpg" alt="cassette">
             <button class="lider-cta__btn">Cassette</button>
           </div>
         </div>
@@ -124,28 +127,28 @@
 
     <div class="conditions-row">
         <div class="conditions-row__item">
-          <img src="./assets/icons/fabrica.png" alt="">
+          <img src="./assets/icons/fabrica.png" alt="direto da fábrica">
           <span>
             <strong>Direto De Fábrica</strong>
             <p>Qualidade midea</p>
           </span>
         </div>
         <div class="conditions-row__item">
-          <img src="./assets/icons/porcentagem.png" alt="">
+          <img src="./assets/icons/porcentagem.png" alt="parcelamos suas compras">
           <span>
             <strong>Facilidade Para Pagamento.</strong>
-            <p>Parcelos suas compras em até 12x</p>
+            <p>Parcelamos suas compras em até 12x</p>
           </span>
         </div>
         <div class="conditions-row__item">
-          <img src="./assets/icons/fretegratis.png" alt="">
+          <img src="./assets/icons/fretegratis.png" alt="frete grátis">
           <span>
             <strong>Frete Grátis *</strong>
             <p>Sul, Sudeste, Centro-Oeste e Nordeste</p>
           </span>
         </div>
         <div class="conditions-row__item">
-          <img src="./assets/icons/etiqueta.png" alt="">
+          <img src="./assets/icons/etiqueta.png" alt="garantia do fabricante">
           <span>
             <strong>Garantia Direta</strong>
             <p>do Fabricante</p>
@@ -155,12 +158,12 @@
 
     <div class="kitchen-portfolio">
         <h2 class="kitchen-portfolio__text">Linha completa para te surpreender</h2>
-        <a href="#"><img class="kitchen-portfolio__img" src="./assets/Cozinha_-_1200x600.png" alt=""></a>
+        <a href="#"><img class="kitchen-portfolio__img" src="./assets/Cozinha_-_1200x600.png" alt="conheça nossa linha de equipamentos para cozinha"></a>
     </div>
 
-    <div class="ofertas">
-      <h2 class="ofertas__text">Aproveite as ofertas especiais do dia!</h2>
-      <div class="ofertas__slider">
+    <div class="offers">
+      <h2 class="offers__text">Aproveite as ofertas especiais do dia!</h2>
+      <div class="offers__slider">
         
         <div class="c-product">
           <a class="c-product__title-link" href="#"><h3>Secadora Midea 11,2kg com Smart Sec</h3></a>
@@ -211,18 +214,18 @@
 
     <div class="banners">
       <a href="" class="banners__img-link banner1">
-        <img src="./assets/banner_cozinha_1.jpg" alt="" >
+        <img src="./assets/banner_cozinha_1.jpg" alt="conheça nossa linha de cozinhas planejadas">
       </a>
       <div>
       <a href="" class="banners__img-link banner2">
-        <img src="./assets/600X270-HOME.png" alt=""  >
+        <img src="./assets/600X270-HOME.png" alt="lava e seca stormwash inverter">
       </a>
       <a href="" class="banners__img-link banner3">
-        <img src="./assets/600X270-HOME2.png" alt="" >
+        <img src="./assets/600X270-HOME2.png" alt="aspirador de pó robô midea smart shell">
       </a>
     </div>
       <a href="" class="banners__img-link banner4">
-        <img src="./assets/dimencionador_1_.jpg" alt="" >
+        <img src="./assets/dimencionador_1_.jpg" alt="dimensionador, saiba qual é o ar condicionado certo para você" >
       </a>
     </div>
 
@@ -347,7 +350,7 @@
         <div class="bottom__content">
           <div class="bottom__navigation">
             <div class="bottom__col bottom--col1">
-            <img class="bottom__logo" src="./assets/logo_branco_2.png" alt="midea">
+            <img class="bottom__logo" src="./assets/logo_branco_2.png" alt="O Maior Fabricante de Eletrodomésticos e Ar Condicionado - Midea Store">
             <span>SAC</span>
             <p>Precisa de ajuda? Fale com a gente!</p>
             <a href="#">Clique aqui para Atendimento Loja Virtual</a>
