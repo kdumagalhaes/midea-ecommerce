@@ -358,3 +358,97 @@ nav {
   color: #fff;
   text-transform: uppercase;
 }
+.kitchen-portfolio__img {
+  width: 100%;
+}
+.ofertas {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.ofertas__text {
+  text-align: center;
+  margin: 30px 0 10px 0;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #9ea4aa;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #6D6D6D;
+}
+.ofertas__slider {
+  display: flex;
+  margin-bottom: 30px;
+}
+.c-product {
+  height: auto;
+  border-right: 1px solid #9ea4aa;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #535454;
+}
+.c-product:first-child {
+  border-left: 1px solid #9ea4aa;
+}
+.c-product .c-product__title-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #535454;
+}
+.c-product .c-product__title-link h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.c-product .c-product__img-link img {
+  margin-bottom: 20px;
+}
+.c-product .c-product__price-tag {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.c-product .c-product__payment,
+.c-product .c-product__value {
+  font-weight: bold;
+}
+.c-product .c-product__value {
+  font-size: 1.4rem;
+}
+.c-product .c-product__btn {
+  max-width: 120px;
+  background-color: #535454;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 15px 25px;
+}
+.c-product .c-product__btn:hover {
+  transform: scale(0.95);
+}
+.banners {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.banners div {
+  display: flex;
+  width: 100%;
+}
+.banners img {
+  height: auto;
+  width: 100%;
+}
+.banners .banner1 img {
+  margin-bottom: 30px;
+}
+.banners .banner2 {
+  margin-right: 30px;
+}
+.banners .banner4 img {
+  margin-top: 30px;
+}
