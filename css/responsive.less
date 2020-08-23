@@ -21,9 +21,36 @@
         font-size: 0.75rem;
     }
 
+    .slider-container {
+        display: none;
+    }
+    
+    .slider-container--responsive {
+        display: block;
+        overflow: hidden;
+        height: 60vw;
+    }
+
+    .c-top-slider__img--responsive {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+    
+        img {
+            width: 100%;
+    
+        }
+    }
+
+    .selected-img--responsive {
+        opacity: 1;
+    }
+
     .previous,
     .next {
-        top: 60px;
+        display: none;
     }
 
     .lider-cta__title {

@@ -206,6 +206,9 @@ nav {
   overflow: hidden;
   height: 19vw;
 }
+.slider-container--responsive {
+  display: none;
+}
 .c-top-slider {
   position: relative;
   z-index: 1;

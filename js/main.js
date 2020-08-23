@@ -3,15 +3,20 @@ let currentImageIndex = 0;
 let images = document.querySelectorAll('.c-top-slider__img');
 let max = images.length;
 
+let imagesResponsive = document.querySelectorAll('.c-top-slider__img--responsive')
+
 const topSlider = document.querySelector('c-top-slider');
 const previous = document.querySelector('.previous');
 const next = document.querySelector('.next');
+
 
 function startJs() {
 
   //slide imgs autoplay && clicking on 'next' arrow
   const slideImages = () => {
     images[currentImageIndex].classList.remove('selected-img');
+    imagesResponsive[currentImageIndex].classList.remove('selected-img--responsive');
+
   
     currentImageIndex++;
   
@@ -20,6 +25,8 @@ function startJs() {
     }
   
     images[currentImageIndex].classList.add('selected-img');
+    imagesResponsive[currentImageIndex].classList.add('selected-img--responsive');
+
   };
   
   //slide imgs clicking on 'previous' arrow
