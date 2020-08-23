@@ -1,7 +1,15 @@
 @import 'theme.less';
 
+.overlay {
+    display: none;
+}
+
 .top-cart--responsive {
     display: none;
+}
+
+.label--hidden {
+    font-size: 0.01rem;
 }
 
 .top-menu-info {
@@ -13,7 +21,6 @@
     display: flex;
     align-items: center;
     padding: @safeAreaPadding;
-
 
     div {
         width: 100%;
@@ -219,6 +226,12 @@ header {
 nav {
     width: 100%;
     background-color: @blue;
+}
+
+.nav--responsive {
+    input, label, ul {
+        display: none;
+    }
 }
 
 .main-navigation {
@@ -717,6 +730,10 @@ nav {
     }
 }
 
+.bottom--responsive {
+    display: none;
+}
+
 .bottom {
     width: 100%;
     background-color: @gray;
@@ -841,6 +858,10 @@ nav {
             margin-bottom: 0;
         }
     }
+}
+
+.bottom__links--responsive {
+    display: none;
 }
 
 .bottom-info {

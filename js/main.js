@@ -1,3 +1,5 @@
+
+//slider configurations
 let time = 2500;
 let currentImageIndex = 0;
 let images = document.querySelectorAll('.c-top-slider__img');
@@ -9,8 +11,28 @@ const topSlider = document.querySelector('c-top-slider');
 const previous = document.querySelector('.previous');
 const next = document.querySelector('.next');
 
+//responsive menu configurations
+const overlayDiv = document.querySelector('.overlay')
+const hamburgerNav = document.querySelector('.fa-bars')
+const navResponsive = document.querySelector('.nav--responsive')
 
 function startJs() {
+
+  //responsive menu
+
+  //hamburger click opens menu
+  hamburgerNav.addEventListener('click', () => {
+    overlayDiv.style.display = 'block'
+    navResponsive.style.left = '0'
+  })
+
+  //overlay click closes responsive menu
+  overlayDiv.addEventListener('click', () => {
+    overlayDiv.style.display = 'none'
+    navResponsive.style.left = '-5000px'
+  })
+
+  //top slider
 
   //slide imgs autoplay && clicking on 'next' arrow
   const slideImages = () => {

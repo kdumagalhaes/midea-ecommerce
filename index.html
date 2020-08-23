@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <div class="overlay"></div>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,7 +39,7 @@
               alt="O Maior Fabricante de Eletrodomésticos e Ar Condicionado - Midea Store"
           /></a>
         </h1>
-        <label for="pesquisa">barra de pesquisa</label>
+        <label class="label--hidden" for="pesquisa">barra de pesquisa</label>
         <input
           id="pesquisa"
           class="top-cart__search-bar"
@@ -64,6 +65,64 @@
       </div>
     </div>
 
+    <nav class="nav--responsive">
+      <div class="nav--responsive__item1">
+      <input type="checkbox" name="ar-condicionado" id="ar-condicionado">
+      <label for="ar-condicionado">Ar Condicionado</label>
+      <ul>
+        <li><a href="#">Split Inverter</a></li>
+        <li><a href="#">Split</a></li>
+        <li><a href="#">Janela</a></li>
+        <li><a href="#">MultiSplit</a></li>
+        <li><a href="#">Cassette</a></li>
+        <li><a href="#">Portátil</a></li>
+      </ul>
+    </div>
+
+    <div class="nav--responsive__item2">
+      <input type="checkbox" name="eletrodomesticos" id="eletrodomesticos">
+      <label for="eletrodomesticos">Eletrodomésticos</label>
+      <ul>
+        <li><a href="#">Micro-ondas</a></li>
+        <li><a href="#">Forno de Embutir</a></li>
+        <li><a href="#">Cooktop</a></li>
+        <li><a href="#">Coifa</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Refrigeradores</a></li>
+        <li><a href="#">Frigobar</a></li>
+        <li><a href="#">Adega</a></li>
+        <li><a href="#">Cervejeira</a></li>
+        <li><a href="#">Freezer</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Lavadora</a></li>
+        <li><a href="#">Lava e Seca</a></li>
+        <li><a href="#">Secadora</a></li>
+      </ul>
+    </div>
+
+      <div class="nav--responsive__item3">
+      <input type="checkbox" name="eletroportateis" id="eletroportateis">
+      <label for="eletroportateis">Eletroportáteis</label>
+      <ul>
+        <li><a href="#">Aspirador</a></li>
+        <li><a href="#">Fritadeira</a></li>
+        <li><a href="#">Panela Elétrica</a></li>
+        <li><a href="#">Climatizador</a></li>
+      </ul>
+    </div>
+
+    <div class="nav--responsive__item3">
+      <input type="checkbox" name="acessorios-pecas" id="acessorios-pecas">
+      <label for="acessorios-pecas">Acessórios e Peças</label>
+      <ul>
+        <li><a href="#">Peças</a></li>
+        <li><a href="#">Acessórios</a></li>
+      </ul>
+    </div>
+    </nav>
+
     <div class="top-cart--responsive">
       <div class="top-cart__row--responsive">
       <i class="fas fa-bars"></i>
@@ -86,7 +145,7 @@
       </div>
 
     </div>
-      <label for="pesquisa-mobile">barra de pesquisa</label>
+      <label class="label--hidden" for="pesquisa-mobile">barra de pesquisa</label>
       <input
         id="pesquisa-mobile"
         class="top-cart__search-bar--responsive"
@@ -136,9 +195,9 @@
     <div class="promo-cta">
       <div class="promo-cta__content">
         <span class="promo-cta__text">Cadastre-se e fique por dentro das ofertas, lançamentos, promoções.</span>
-        <label for="nome">insira seu nome</label>
+        <label class="label--hidden" for="nome">insira seu nome</label>
         <input id="nome" class="promo-cta__input" type="text" placeholder="Nome">
-        <label for="email">insira seu email</label>
+        <label class="label--hidden" for="email">insira seu email</label>
         <input id="email" class="promo-cta__input" type="email" placeholder="Email">
         <button class="c-btn promo-cta__btn">Cadastre-se</button>
       </div>
@@ -397,6 +456,33 @@
     </div>
 
     <footer>
+
+      <div class="bottom--responsive">
+        <input type="checkbox" name="accordion" id="bottom__accordion">
+        <div>
+          <label for="bottom__accordion">Canais de atendimento</label>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <ul>
+          <li><strong>SAC</strong></li>
+          <li>Precisa de ajuda? Fale com a gente!</li>
+          <li><strong>Capitais e regiões metropolitanas</strong></li>
+          <li><strong>3003 1005</strong></li>
+        </ul>
+        <ul>
+          <li><strong>Demais localidades</strong></li>
+          <li><strong>0800 648 1005</strong></li>
+        </ul>
+        <ul>
+          <li>Atendimento loja virtual</li>
+          <li><a href="mailto:contato@mideastore.com.br">contato@mideastore.com.br</a></li>
+        </ul>
+        <ul>
+          <li>Segunda à Sexta das 8h às 20h e</li>
+          <li>Sábados, das 8 às 18h.</li>
+        </ul>
+      </div>
+
       <div class="bottom">
         <div class="bottom__content">
           <div class="bottom__navigation">
@@ -472,6 +558,15 @@
             </strong></p>
           </div>
         </div>
+
+        <div class="bottom__links--responsive">
+          <ul>
+            <li><a href="#">Sobre a Midea</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Formas de pagamento</a></li>
+          </ul>
+        </div>
+
       </div>
       <div class="bottom-info">
         <div class="bottom-info__content">
