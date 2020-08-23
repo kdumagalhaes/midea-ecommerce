@@ -7,13 +7,81 @@
         }
     }
 
-    .logo,
-    .top-cart__search-bar {
-        margin-right: 20px;
+    .top-cart {
+        display: none;
     }
 
-    .top-cart__search-bar {
-        height: 35px;
+    .top-cart--responsive {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #fff;
+
+        .top-cart__row--responsive {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .top-cart__account-cart--responsive {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 100px;
+        }
+
+        .fa-bars {
+            font-size: 1.2rem;
+        }
+
+        .fa-user {
+            font-size: 1.5rem;
+        }
+
+        .fa-shopping-cart {
+            font-size: 1.4rem;
+        }
+
+        .c-cart__bag {
+            display: block;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: @gray;
+            position: absolute;
+            top: -4px;
+            left: 20px;
+        }
+
+        .top-cart__search-bar--responsive {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            height: 45px;
+            border-radius: 50px;
+            border: 1px solid #ddd;
+            padding: 0 40px 0 20px;
+            background-image: url('../assets//icons/search.svg');
+            background-repeat: no-repeat;
+            background-position-x: 289px;
+            background-position-y: center;
+            background-size: 30px;
+        
+            &::placeholder {
+                opacity: 0.5;
+                font-weight: bold;
+            }
+        }
+
+        .logo--responsive {
+            a {
+                img {
+                    width: 95px;
+                }
+            }
+        }
     }
 
     .c-btn,
@@ -178,27 +246,6 @@
         display: none;
     }
 
-    .top-cart__search-bar--responsive {
-        display: block;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-        height: 50px;
-        border-radius: 50px;
-        border: 1px solid #ddd;
-        padding: 0 40px 0 20px;
-        background-image: url('../assets//icons/search.svg');
-        background-repeat: no-repeat;
-        background-position-x: 450px;
-        background-position-y: center;
-        background-size: 30px;
-    
-        &::placeholder {
-            opacity: 0.5;
-            font-weight: bold;
-        }
-    }
-
     .c-create-account__login-link {
         display: none;
     }
@@ -268,6 +315,8 @@
     }
 
     .banners {
+        padding: @safeAreaPaddingResponsive;
+
         .banner1, .banner4 {
             display: none;
         }

@@ -1,3 +1,6 @@
+.top-cart--responsive {
+  display: none;
+}
 .top-menu-info {
   background-color: #6D6D6D;
   width: 100%;
@@ -31,9 +34,6 @@
 }
 header {
   width: 100%;
-}
-.fa-bars {
-  display: none;
 }
 .logo,
 .top-cart__search-bar {
