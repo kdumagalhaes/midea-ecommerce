@@ -213,7 +213,7 @@
     background-position-y: center;
     background-size: 30px;
   }
-  .top-cart--responsive .top-cart__search-bar--responsive::placeholder {
+  background .top-cart--responsive .top-cart__search-bar--responsive::placeholder {
     opacity: 0.5;
     font-weight: bold;
   }
