@@ -70,7 +70,7 @@ header {
     max-width: 1280px;
     height: 100px;
     margin: 0 auto;
-    padding: @safeAreaPadding
+    padding: @safeAreaPadding;
 }
 
 .top-cart__content {
@@ -205,7 +205,7 @@ header {
 }
 
 .c-cart__cart-link {
-    color: @gray;
+    color: @lightGray;
     transition: 0.3s;
 
     &:hover {
@@ -220,8 +220,12 @@ header {
     height: 20px;
     background-color: @gray;
     position: absolute;
-    top: -8px;
-    left: 20px;
+    top: 0;
+    left: 25px;
+}
+
+.la-shopping-cart {
+    font-size: 2.5rem;
 }
 
 nav {
@@ -230,6 +234,7 @@ nav {
 }
 
 .nav--responsive {
+
     input,
     label,
     ul {
@@ -263,11 +268,13 @@ nav {
     position: relative;
 }
 
-.item__list {    
+.item__list {
     width: 350px;
     margin-right: 30px;
+
     li {
         margin-bottom: 10px;
+
         img {
             width: 70px;
             padding-top: 10px;
@@ -283,19 +290,20 @@ nav {
     display: block;
 }
 
-.item2:hover ~ .item__content {
+.item2:hover~.item__content {
     display: block;
 }
 
-.item3:hover ~ .item__content {
+.item3:hover~.item__content {
     display: block;
 }
 
-.item4:hover ~ .item__content {
+.item4:hover~.item__content {
     display: block;
 }
 
-.item__content--item2, .item__content--item3 {
+.item__content--item2,
+.item__content--item3 {
     display: flex;
 
     ul {
@@ -327,7 +335,10 @@ nav {
 }
 
 
-.item__content--item1, .item__content--item2, .item__content--item3, .item__content--item4 {
+.item__content--item1,
+.item__content--item2,
+.item__content--item3,
+.item__content--item4 {
     visibility: hidden;
     width: 100%;
     max-width: 450px;
@@ -341,15 +352,15 @@ nav {
     visibility: visible;
 }
 
-.item2:hover > .item__content--item2 {
+.item2:hover>.item__content--item2 {
     visibility: visible;
 }
 
-.item3:hover > .item__content--item3 {
+.item3:hover>.item__content--item3 {
     visibility: visible;
 }
 
-.item4:hover > .item__content--item4 {
+.item4:hover>.item__content--item4 {
     visibility: visible;
 }
 
@@ -1013,7 +1024,7 @@ nav {
     padding: 15px;
     border-radius: 3px;
 
-    i{
+    i {
         color: @lighterGray;
     }
-  }
+}
