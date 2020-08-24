@@ -16,7 +16,31 @@ const overlayDiv = document.querySelector('.overlay')
 const hamburgerNav = document.querySelector('.fa-bars')
 const navResponsive = document.querySelector('.nav--responsive')
 
+//scroll up configurations
+const scrollUpBtn = document.querySelector('.scroll-up')
+
 function startJs() {
+
+  //scroll up button
+
+  //btn show control
+  const scrolling = () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollUpBtn.style.display = "block";
+    } else {
+      scrollUpBtn.style.display = "none";
+    }
+  }
+
+  window.onscroll = function () {
+    scrolling()
+  }
+
+  //
+  scrollUpBtn.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  })
 
   //responsive menu
 

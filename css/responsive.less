@@ -218,7 +218,7 @@
     }
 }
 
-@media (max-width: 667px) {
+@media (max-width: 768px) {
 
     .top-menu-info,
     .blog-area {
@@ -282,12 +282,6 @@
             border-radius: 50px;
             border: 1px solid #ddd;
             padding: 0 40px 0 20px;
-            background-image: url('../assets//icons/search.svg');
-            background-repeat: no-repeat;
-            background-position-x: 289px;
-            background-position-y: center;
-            background-size: 30px;
-            background
 
             &::placeholder {
                 opacity: 0.5;
@@ -434,7 +428,7 @@
     }
 
     .offers__slider {
-        overflow: scroll;
+        overflow-x: scroll;
     }
 
     .c-product {
@@ -496,6 +490,10 @@
                 margin-bottom: 15px;
             }
         }
+    }
+
+    .scroll-up {
+        visibility: hidden;
     }
 
 }
